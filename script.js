@@ -2,6 +2,7 @@
 let name = document.getElementById("name").value;
 let year = document.getElementById("year").value;
 function myFunc() {
+	console.log("i m inside");
 	if(name != "" && year != "") {
 		let newUrl = document.getElementById("url").innerText;
 		newUrl.innerText = newUrl + `?name=${name}&${year}`;
