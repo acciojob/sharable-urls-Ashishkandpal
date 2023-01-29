@@ -1,6 +1,6 @@
 // your code here
-let name = document.getElementById("name").innerText;
-let year = document.getElementById("year").innerText;
+let name = document.getElementById("name").value;
+let year = document.getElementById("year").value;
 function myFunc() {
 	if(name != "" && year != "") {
 		let newUrl = document.getElementById("url").innerText;
