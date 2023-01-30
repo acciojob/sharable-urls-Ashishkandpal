@@ -5,14 +5,14 @@ function myFunc() {
 	console.log("i m inside");
 	if(name != "" && year != "") {
 		let newUrl = document.getElementById("url");
-		newUrl.innerText = newUrl + `?name=${name}&${year}`;
+		newUrl.innerText = newUrl.innerText + `?name=${name}&${year}`;
 	}
 	else if(name != "") {
 		let newUrl = document.getElementById("url");
-		newUrl.innerText = newUrl + `?name=${name}`;
+		newUrl.innerText = newUrl.innerText + `?name=${name}`;
 	}
 	else {
 		let newUrl = document.getElementById("url");
-		newUrl.innerText = newUrl + `?${year}`;
+		newUrl.innerText = newUrl.innerText + `?${year}`;
 	}
 }
