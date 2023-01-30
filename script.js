@@ -4,15 +4,15 @@ let year = document.getElementById("year").value;
 function myFunc() {
 	console.log("i m inside");
 	if(name != "" && year != "") {
-		let newUrl = document.getElementById("url").innerText;
+		let newUrl = document.getElementById("url");
 		newUrl.innerText = newUrl + `?name=${name}&${year}`;
 	}
 	else if(name != "") {
-		let newUrl = document.getElementById("url").innerText;
+		let newUrl = document.getElementById("url");
 		newUrl.innerText = newUrl + `?name=${name}`;
 	}
 	else {
-		let newUrl = document.getElementById("url").innerText;
+		let newUrl = document.getElementById("url");
 		newUrl.innerText = newUrl + `?${year}`;
 	}
 }
