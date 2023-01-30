@@ -2,17 +2,17 @@
 let name = document.getElementById("name").value;
 let year = document.getElementById("year").value;
 function myFunc() {
-	console.log("i m inside");
+	let prev = document.getElementById("url").innerText;
 	if(name != "" && year != "") {
 		let newUrl = document.getElementById("url");
-		newUrl.innerText = newUrl.innerText + `?name=${name}&${year}`;
+		newUrl.innerText = prev + `?name=${name}&${year}`;
 	}
 	else if(name != "") {
 		let newUrl = document.getElementById("url");
-		newUrl.innerText = newUrl.innerText + `?name=${name}`;
+		newUrl.innerText = prev + `?name=${name}`;
 	}
 	else {
 		let newUrl = document.getElementById("url");
-		newUrl.innerText = newUrl.innerText + `?${year}`;
+		newUrl.innerText = prev + `?${year}`;
 	}
 }
