@@ -5,7 +5,7 @@ function myFunc() {
         
 			if(name != "" && year != "") {
 				let newUrl = document.getElementById("url");
-				newUrl.innerText = newUrl.innerText + `?name=${name}&${year}`;
+				newUrl.innerText = newUrl.innerText + `?name=${name}&year=${year}`;
 			}
 			else if(name != "") {
 				let newUrl = document.getElementById("url");
