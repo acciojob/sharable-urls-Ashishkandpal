@@ -13,6 +13,6 @@ function myFunc() {
 			}
 			else {
 				let newUrl = document.getElementById("url");
-				newUrl.innerText = newUrl.innerText + `?${year}`;
+				newUrl.innerText = newUrl.innerText + `?year=${year}`;
 			}
 }
